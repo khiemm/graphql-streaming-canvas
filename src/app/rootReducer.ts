@@ -1,10 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit';
-// import scrubberReducer from 'features/videoScrubber/scrubberSlice';
-// import videoReducer from 'features/userVideo/videoSlice';
+import scrubberReducer from '../components/videoScrubber/scrubberSlice';
+import videoReducer from '../components/userVideo/videoSlice';
 
 const rootReducer = combineReducers({
-  // scrubber: scrubberReducer,
-  // video: videoReducer
+  scrubber: scrubberReducer,
+  video: videoReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
