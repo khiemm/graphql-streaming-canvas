@@ -1,0 +1,30 @@
+.vidbox {
+  position: relative;
+}
+
+#video {
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#playbutton {
+  width: 0;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 0;
+  background-color: transparent;
+  filter: opacity(60%);
+  border-color: transparent transparent transparent #222;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 25px 0 25px 40px;
+}
+
+#playbutton.playing {
+  border-style: double;
+  border-width: 0 0 0 40px;
+}
